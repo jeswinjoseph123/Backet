@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* header*/
+header{
+    width: 100%;
+    background-color: rgba(23, 23,23, 0.20);
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+}
+/*
+.container img{
+    float: left;
+    margin: 0;
+    width: 120px;
+    height: 50px;
+    top: 10px;
+}
+*/
+header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: auto;
+
+}
+header a{
+
+   
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255,255, 0.768);
+}
+/*header end*/
+/*banner */
+.banner-cont{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.banner-cont .cont{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/*banner end*/
+/*left*/
+.left{
+    width: 600px;
+    align-self: start;
+}
+.cont .left h1{
+    margin: 0px;
+    font-size: 40px;
+    color: white;
+}
+.cont .left p{
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color:rgba(255, 255, 255, 0.88);
+    margin-top: 18px;
+    line-height: 28px;
+}
+.left button{
+    color: rgb(11, 33, 66);
+    font-weight: bold;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/*left end*/
+/*right*/
+.right{
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.218);
+}
+.right h4{
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: royalblue;
+    
+}
+.input{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input label{
+    color: rgb(165, 165, 165);
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    transition: 0.5s ease-in-out;
+}
+#date{
+    
+}
+.input input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    color: rgb(25, 71, 139);
+    border-bottom: 1px solid #c9c9c98a;
+}
+.inputradio{
+    margin-left: 40px;
+    color:rgb(165, 165, 165) ;
+}
+.input input:focus ~ label,
+.input input:valid ~ label{
+    color: rgb(25, 71, 139);
+    top: -10px;
+    font-size: 12px;
+}
+.input input:focus,
+.input input:valid {
+    border-color: rgb(25, 71, 139);
+}
+.submit-button{
+    text-align: center;
+}
+.submit{
+    background-color: rgb(25, 71, 139);
+    color: white;
+    border: none;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
+
+}
+.submit:hover{
+    box-shadow: 0 3px 6px silver;
+}
+/* section 2 */
+.sec{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+.card{
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 26px rgb(27, 27, 27);
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.image img:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+/* end */
+footer{
+    text-align: center;
+    color: grey;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+footer span{
+    color: rgb(25, 71, 139);
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer:after{
+    content:"\00a9";
+
+}
